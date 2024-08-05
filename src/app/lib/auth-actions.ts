@@ -2,10 +2,11 @@
 
 import axios from "axios";
 import jwt from "jsonwebtoken";
-import { INVALID_TOKEN } from "../constant";
+import { INVALID_TOKEN, LOGIN_ROUTE } from "../constant";
 import { cookies } from "next/headers";
 import { ApiResponse, UserCredential } from "./definitions";
 import { buildErrorResponse } from "./utils";
+import { redirect } from "next/navigation";
 
 /**
  * Extracts and decodes JWT claims from the provided token.
@@ -57,6 +58,7 @@ export const extractClaimsWithoutToken = (): any | null => {
 
 export const removeCookie = () => {
   cookies().delete("auth");
+  redirect(LOGIN_ROUTE);
 };
 
 /**
@@ -103,14 +105,13 @@ export async function loginFunction(email: string, password: string) {
         token
       )) as UserCredential;
 
-      console.log(new Date(claims.exp * 1000));
-
       // Set the token in cookies with appropriate options
       cookies().set("auth", token, {
-        expires: new Date(claims.exp * 1000), // Default expiration time is 10 minutes
+        expires:
+          new Date(claims.exp * 1000) || new Date(Date.now() + 10 * 60 * 1000), // Default expiration time is 10 minutes
         path: "/", // Cookie path (default: root path '/')
-        secure: false, // Set cookie as secure in production
-        httpOnly: true, // Set cookie as HttpOnly in production
+        secure: isProd, // Set cookie as secure in production
+        httpOnly: isProd, // Set cookie as HttpOnly in production
       });
     }
 

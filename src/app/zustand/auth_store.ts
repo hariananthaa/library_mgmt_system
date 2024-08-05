@@ -1,6 +1,5 @@
 import { UserCredential } from "../lib/definitions";
 import { create } from "zustand";
-import Cookies from "js-cookie";
 
 interface AuthStore {
   user: UserCredential | null;
@@ -15,6 +14,5 @@ export const useAuthStore = create<AuthStore>((set) => ({
   },
   logout: () => {
     set({ user: null });
-    Cookies.remove("auth");
   },
 }));
