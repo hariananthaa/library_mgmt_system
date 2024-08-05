@@ -43,7 +43,7 @@ export default async function RequestsTable({
         >
           {requests.length == 0 ? (
             <h1 className="w-full flex col-span-1 sm:col-span-2 justify-center items-center h-60">
-              There is no requests!
+              There is no data!
             </h1>
           ) : (
             requests.map((request: BookTransaction) => (
@@ -86,7 +86,7 @@ export default async function RequestsTable({
             <tbody className="w-full h-60 bg-white">
               <tr className="w-full">
                 <td colSpan={7} className="w-full text-center">
-                  There is no requests!
+                  There is no data!
                 </td>
               </tr>
             </tbody>

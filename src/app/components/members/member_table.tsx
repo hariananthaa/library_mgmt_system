@@ -1,6 +1,6 @@
 import { EditButton } from "@/app/common/edit_button";
 import { Member, Role } from "@/app/lib/definitions";
-import { fetchAllMembers } from "@/app/lib/member-actions";
+import { fetchAllMembers } from "@/app/lib/member_actions";
 import Pagination from "../books/pagination";
 import DeleteMemberButton from "./delete_button";
 import Link from "next/link";
@@ -61,7 +61,7 @@ export default async function MembersTable({
                         color:
                           member.role === Role.ADMIN
                             ? "#FF00FF"
-                            : member.role === Role.FACULTY
+                            : member.role === Role.FAULTY
                               ? "#FFA500"
                               : "#800080",
                       }}

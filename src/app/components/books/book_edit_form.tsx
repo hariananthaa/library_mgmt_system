@@ -1,9 +1,9 @@
 "use client";
 
 import { Button } from "@/app/common/button";
-import CustomDropDown from "@/app/common/custom-drop-down";
-import InputField from "@/app/common/input-field";
-import { updateBook } from "@/app/lib/book-actions";
+import CustomDropDown from "@/app/common/custom_drop_down";
+import InputField from "@/app/common/input_field";
+import { updateBook } from "@/app/lib/book_actions";
 import { ArrowPathIcon, UserCircleIcon } from "@heroicons/react/24/outline";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";

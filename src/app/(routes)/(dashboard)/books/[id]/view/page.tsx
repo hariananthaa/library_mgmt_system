@@ -1,7 +1,7 @@
 import EditBookForm from "@/app/components/books/book_edit_form";
 import Breadcrumbs from "@/app/components/books/breadcrumbs";
 import { BOOKS_ROUTE } from "@/app/constant";
-import { getBookById } from "@/app/lib/book-actions";
+import { getBookById } from "@/app/lib/book_actions";
 import { notFound } from "next/navigation";
 
 export default async function Page({ params }: { params: { id: string } }) {

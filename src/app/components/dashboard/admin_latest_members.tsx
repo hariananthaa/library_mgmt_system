@@ -8,7 +8,7 @@ import { lusitana } from "../login/fonts";
 import { shimmer } from "@/app/common/skeletons";
 import { Member } from "@/app/lib/definitions";
 import Link from "next/link";
-import { fetchAllMembers } from "@/app/lib/member-actions";
+import { fetchAllMembers } from "@/app/lib/member_actions";
 
 export default async function AdminLatestMembers() {
   const latestMembersRes = await fetchAllMembers("", 1, 5);

@@ -1,6 +1,6 @@
 import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 import { lusitana } from "../login/fonts";
-import { fetchDashboardCounts } from "@/app/lib/dashboard-actions";
+import { fetchDashboardCounts } from "@/app/lib/dashboard_actions";
 import clsx from "clsx";
 
 export default async function AdminCards() {

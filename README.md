@@ -22,6 +22,39 @@ A modern library management system built with Next.js, leveraging the latest fea
 - **Dashboard**: View counts and statistics related to books and members.
 - **Authentication**: Secure access with role-based authentication and authorization.
 
+## Authentication and Authorization
+
+This application implements a robust role-based authorization system to ensure secure access to various features:
+
+- **User Roles**:
+
+  - Admin: Can manage books, members, and transactions.
+  - Member: Can view books and manage their own transactions.
+
+- **Access Control**:
+
+  - Certain routes and actions are restricted based on user roles.
+  - UI elements dynamically adapt to show only permitted actions for each role.
+
+- **JWT Authentication**:
+
+  - Uses JSON Web Tokens for secure authentication.
+  - Tokens are stored in HTTP-only secure cookies, enhancing security against XSS attacks.
+  - Automatic token refresh mechanism to maintain user sessions.
+
+- **Protected Routes**:
+
+  - Server-side and client-side route protection to prevent unauthorized access.
+
+- **Secure Cookie Usage**:
+  - JWT stored in HTTP-only cookies to prevent client-side access.
+  - Secure flag ensures the cookie is only transmitted over HTTPS.
+  - SameSite attribute set to prevent CSRF attacks.
+
+## Application Screenshots
+
+Below are some screenshots showcasing key features of our Library Management System:
+
 ## Getting Started
 
 ### Prerequisites
@@ -92,6 +125,28 @@ or
 ```bash
 yarn start
 ```
+
+## Deployment
+
+This application is hosted on Vercel, a cloud platform for static sites and Serverless Functions.
+
+### Important Note on Inactivity
+
+Due to the nature of Vercel's free tier hosting:
+
+- The application may become inactive after periods of no usage.
+- The first request after an inactive period may take longer to load (usually 10-20 seconds) as the server spins up.
+- Subsequent requests will be faster once the server is active.
+
+If you experience a delay when first accessing the application, please be patient. This is normal behavior for applications hosted on Vercel's free tier that haven't been accessed recently.
+
+### Live Demo
+
+You can access the live version of this application at: https://library-mgmt-system-beta.vercel.app
+
+Please note that if you encounter any issues or the application seems unresponsive, you can try refreshing the page after a short wait. If problems persist, please reach out for support.
+
+- Email: support@yourlibrarysystem.com
 
 ## Project Structure
 

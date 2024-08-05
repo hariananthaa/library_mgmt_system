@@ -29,7 +29,7 @@ export interface Member {
 
 export enum Role {
   STUDENT = "STUDENT",
-  FACULTY = "FACULTY",
+  FAULTY = "FAULTY",
   ADMIN = "ADMIN",
 }
 

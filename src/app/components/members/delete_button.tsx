@@ -1,7 +1,7 @@
 "use client";
 
 import { BOOKS_ROUTE, LOGIN_ROUTE } from "@/app/constant";
-import { deleteMember } from "@/app/lib/member-actions";
+import { deleteMember } from "@/app/lib/member_actions";
 import { ArrowPathIcon, TrashIcon } from "@heroicons/react/24/outline";
 import { useRouter } from "next/navigation";
 import { useState } from "react";

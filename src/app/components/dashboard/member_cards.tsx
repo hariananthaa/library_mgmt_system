@@ -1,4 +1,4 @@
-import { fetchDashboardCounts } from "@/app/lib/dashboard-actions";
+import { fetchDashboardCounts } from "@/app/lib/dashboard_actions";
 import { Card } from "./admin_cards";
 import clsx from "clsx";
 

@@ -1,6 +1,6 @@
 "use client";
 import React, { ReactElement } from "react";
-import { useAuth } from "./useAuth";
+import { useAuth } from "./use_auth";
 import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 

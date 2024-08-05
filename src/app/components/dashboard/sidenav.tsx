@@ -1,8 +1,8 @@
 import clsx from "clsx";
-import AcmeLogo from "../login/acme-logo";
+import CollegeLogo from "../login/college_logo";
 import LogoutButton from "../login/logout_button";
 import MobileNavLinks from "./mobile_nav_links";
-import NavLinks from "./nav-links";
+import NavLinks from "./nav_links";
 
 export default function SideNav() {
   return (
@@ -12,7 +12,7 @@ export default function SideNav() {
       )}
     >
       <div className="flex h-full flex-col py-3 space-y-2 md:px-2 md:h-full md:overflow-y-auto">
-        <AcmeLogo />
+        <CollegeLogo />
         <div className="flex justify-between space-x-2 md:flex-col md:space-x-0 md:space-y-2 md:h-full md:pb-2">
           <MobileNavLinks />
           <div className="hidden md:block md:space-y-2">

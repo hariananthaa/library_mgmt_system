@@ -3,7 +3,7 @@
 import { useParams, useRouter } from "next/navigation";
 import React, { ReactElement, useEffect, useState } from "react";
 import { useAuthStore } from "../zustand/auth_store";
-import { extractClaimsWithoutToken } from "../lib/auth-actions";
+import { extractClaimsWithoutToken } from "../lib/auth_actions";
 import { HOME_ROUTE, LOGIN_ROUTE } from "../constant";
 import DashboardSkeleton from "./skeletons";
 

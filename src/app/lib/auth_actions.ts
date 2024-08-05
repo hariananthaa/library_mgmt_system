@@ -58,7 +58,6 @@ export const extractClaimsWithoutToken = (): any | null => {
 
 export const removeCookie = () => {
   cookies().delete("auth");
-  redirect(LOGIN_ROUTE);
 };
 
 /**

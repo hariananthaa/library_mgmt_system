@@ -1,5 +1,5 @@
 "use client";
-import InputField from "@/app/common/input-field";
+import InputField from "@/app/common/input_field";
 import { usePopupStore } from "@/app/zustand/popup_store";
 import { DialogTitle } from "@headlessui/react";
 import { yupResolver } from "@hookform/resolvers/yup";

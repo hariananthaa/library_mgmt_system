@@ -1,7 +1,7 @@
 "use server";
 
 import { cookies } from "next/headers";
-import { extractClaims, isTokenValid } from "./auth-actions";
+import { extractClaims, isTokenValid } from "./auth_actions";
 import { redirect } from "next/navigation";
 import axios from "axios";
 

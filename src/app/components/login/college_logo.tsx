@@ -1,15 +1,16 @@
 "use client";
+
 import { LOGIN_ROUTE } from "@/app/constant";
+import { removeCookie } from "@/app/lib/auth_actions";
 import { useAuthStore } from "@/app/zustand/auth_store";
 import { PowerIcon } from "@heroicons/react/24/outline";
 import clsx from "clsx";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-export default function AcmeLogo() {
+export default function CollegeLogo() {
   const router = useRouter();
   const user = useAuthStore((state) => state.user);
-  const logout = useAuthStore((state) => state.logout);
   return (
     <div
       className={` w-full bg-blue-600 rounded flex text-[20px] items-center justify-between text-white md:h-32 md:flex-none`}
@@ -30,8 +31,8 @@ export default function AcmeLogo() {
       </div>
       <button
         onClick={() => {
-          logout();
-          router.replace(LOGIN_ROUTE);
+          removeCookie();
+          router.replace("/login");
         }}
         className="px-3 rounded-full aspect-square flex justify-center items-center md:hidden"
       >

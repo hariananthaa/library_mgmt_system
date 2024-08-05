@@ -1,6 +1,6 @@
 "use client";
 import React, { ReactElement } from "react";
-import { useAuth } from "./useAuth";
+import { useAuth } from "./use_auth";
 
 export type RoleCheckType = "any" | "all";
 

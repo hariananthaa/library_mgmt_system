@@ -1,5 +1,5 @@
 import WithRole from "@/app/common/with_role";
-import WithAuth from "@/app/common/withAuth";
+import WithAuth from "@/app/common/with_auth";
 import { Role } from "@/app/lib/definitions";
 import React, { ReactElement } from "react";
 

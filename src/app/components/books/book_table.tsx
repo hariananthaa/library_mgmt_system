@@ -1,4 +1,4 @@
-import { fetchAllBooks } from "@/app/lib/book-actions";
+import { fetchAllBooks } from "@/app/lib/book_actions";
 import { Book } from "@/app/lib/definitions";
 import clsx from "clsx";
 import Link from "next/link";

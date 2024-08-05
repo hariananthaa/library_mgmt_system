@@ -2,7 +2,7 @@ import Breadcrumbs from "@/app/components/books/breadcrumbs";
 import EditMemberForm from "@/app/components/members/member_edit_form";
 import { MEMBERS_ROUTE } from "@/app/constant";
 import { ApiResponse } from "@/app/lib/definitions";
-import { getMemberById } from "@/app/lib/member-actions";
+import { getMemberById } from "@/app/lib/member_actions";
 import { notFound } from "next/navigation";
 
 export default async function Page({ params }: { params: { id: string } }) {

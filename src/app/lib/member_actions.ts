@@ -5,7 +5,7 @@ import { unstable_noStore as noStore, revalidatePath } from "next/cache";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { z } from "zod";
-import { isTokenValid } from "./auth-actions";
+import { isTokenValid } from "./auth_actions";
 import { MEMBERS_ROUTE } from "../constant";
 import { ApiResponse } from "./definitions";
 import { buildErrorResponse } from "./utils";

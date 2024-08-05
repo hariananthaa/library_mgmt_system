@@ -4,7 +4,7 @@ import {
 } from "@heroicons/react/24/outline";
 import clsx from "clsx";
 import { lusitana } from "../login/fonts";
-import { fetchAllBooks } from "@/app/lib/book-actions";
+import { fetchAllBooks } from "@/app/lib/book_actions";
 import { shimmer } from "@/app/common/skeletons";
 import { Book } from "@/app/lib/definitions";
 import Link from "next/link";
