@@ -26,7 +26,7 @@ A modern library management system built with Next.js, leveraging the latest fea
 
 ### Prerequisites
 
-- Node.js (version 16 or later)
+- Node.js (version 18 or later)
 - npm or yarn
 
 ### Installation
