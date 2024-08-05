@@ -55,6 +55,8 @@ This application implements a robust role-based authorization system to ensure s
 
 Below are some screenshots showcasing key features of our Library Management System:
 
+![login](https://github.com/hariananthaa/library_mgmt_system/blob/main/screenshots/1_login.jpg?raw=true)
+
 ## Getting Started
 
 ### Prerequisites
