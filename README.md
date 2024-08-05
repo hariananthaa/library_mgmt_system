@@ -51,6 +51,12 @@ This application implements a robust role-based authorization system to ensure s
   - JWT stored in HTTP-only cookies to prevent client-side access.
   - Secure flag ensures the cookie is only transmitted over HTTPS.
   - SameSite attribute set to prevent CSRF attacks.
+ 
+## Credentials
+Admin Credential:
+- email: admin@zit.com
+- password: test@123
+- You can add members via this admin credential.
 
 ## Application Screenshots
 
