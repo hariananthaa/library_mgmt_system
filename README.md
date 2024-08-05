@@ -41,6 +41,7 @@ This application implements a robust role-based authorization system to ensure s
   - Uses JSON Web Tokens for secure authentication.
   - Tokens are stored in HTTP-only secure cookies, enhancing security against XSS attacks.
   - Automatic token refresh mechanism to maintain user sessions.
+  - Token expiration time: **10 Minutes**
 
 - **Protected Routes**:
 
@@ -56,6 +57,16 @@ This application implements a robust role-based authorization system to ensure s
 Below are some screenshots showcasing key features of our Library Management System:
 
 ![login](https://github.com/hariananthaa/library_mgmt_system/blob/main/screenshots/1_login.jpg?raw=true)
+![admin_dashboard](https://github.com/hariananthaa/library_mgmt_system/blob/main/screenshots/2_admin_dashboard.jpg?raw=true)
+![books_page](https://github.com/hariananthaa/library_mgmt_system/blob/main/screenshots/3_books_page.jpg?raw=true)
+![members_page](https://github.com/hariananthaa/library_mgmt_system/blob/main/screenshots/4_members_page.jpg?raw=true)
+![edit_book](https://github.com/hariananthaa/library_mgmt_system/blob/main/screenshots/5_admin_edit_book.jpg?raw=true)
+![add_member](https://github.com/hariananthaa/library_mgmt_system/blob/main/screenshots/7_add_member.jpg?raw=true)
+![admin_history](https://github.com/hariananthaa/library_mgmt_system/blob/main/screenshots/8_admin%20History.jpg?raw=true)
+![member_dashboard](https://github.com/hariananthaa/library_mgmt_system/blob/main/screenshots/6_member_dashboard.jpg?raw=true)
+![request_book](https://github.com/hariananthaa/library_mgmt_system/blob/main/screenshots/9_request_book.jpg?raw=true)
+![book_approval](https://github.com/hariananthaa/library_mgmt_system/blob/main/screenshots/10_book_approval.jpg?raw=true)
+![book_returned](https://github.com/hariananthaa/library_mgmt_system/blob/main/screenshots/11_return_book.jpg?raw=true)
 
 ## Getting Started
 
@@ -145,6 +156,11 @@ If you experience a delay when first accessing the application, please be patien
 ### Live Demo
 
 You can access the live version of this application at: https://library-mgmt-system-beta.vercel.app
+
+Admin Credential:
+- email: admin@zit.com
+- password: test@123
+- You can add members via this admin credential.
 
 Please note that if you encounter any issues or the application seems unresponsive, you can try refreshing the page after a short wait. If problems persist, please reach out for support.
 
