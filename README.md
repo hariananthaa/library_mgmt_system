@@ -1,4 +1,4 @@
-# Library Management System
+# Library Management System(Frontend)
 
 A modern library management system built with Next.js, leveraging the latest features like Server Actions and the App Router.
 
@@ -146,7 +146,7 @@ You can access the live version of this application at: https://library-mgmt-sys
 
 Please note that if you encounter any issues or the application seems unresponsive, you can try refreshing the page after a short wait. If problems persist, please reach out for support.
 
-- Email: support@yourlibrarysystem.com
+- Email: khariharan561@gmail.com
 
 ## Project Structure
 
@@ -171,3 +171,11 @@ library_mgmt_system/
 - `lib/`: Utility functions and shared logic
 - `public/`: Static assets
 - `styles/`: Global styles and Tailwind CSS configurations
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Acknowledgments
+
+- Thank you to the open-source community for providing various libraries and tools that made this project possible.
