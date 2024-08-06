@@ -147,14 +147,14 @@ yarn start
 
 ## Deployment
 
-This application is hosted on Vercel, a cloud platform for static sites and Serverless Functions.
+This frontend application is hosted on Vercel, a cloud platform for static sites and Serverless Functions.
 
 ### Important Note on Inactivity
 
-Due to the nature of Vercel's free tier hosting:
+This backend spring boot application is hosted on Render, due to the nature of Render's free tier hosting:
 
 - The application may become inactive after periods of no usage.
-- The first request after an inactive period may take longer to load (usually 10-20 seconds) as the server spins up.
+- The first request after an inactive period may take longer to load (usually 5 - 10 minutes) as the server spins up.
 - Subsequent requests will be faster once the server is active.
 
 If you experience a delay when first accessing the application, please be patient. This is normal behavior for applications hosted on Vercel's free tier that haven't been accessed recently.
