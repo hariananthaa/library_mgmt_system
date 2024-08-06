@@ -61,7 +61,7 @@ export default async function MembersTable({
                         color:
                           member.role === Role.ADMIN
                             ? "#FF00FF"
-                            : member.role === Role.FAULTY
+                            : member.role === Role.FACULTY
                               ? "#FFA500"
                               : "#800080",
                       }}

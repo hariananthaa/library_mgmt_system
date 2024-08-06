@@ -13,7 +13,7 @@ import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import * as yup from "yup";
 
-export const memberRoles = ["ADMIN", "STUDENT", "FAULTY"];
+export const memberRoles = ["ADMIN", "STUDENT", "FACULTY"];
 
 export default function MemberAddForm() {
   const router = useRouter();
