@@ -153,6 +153,8 @@ This frontend application is hosted on Vercel, a cloud platform for static sites
 
 This backend spring boot application is hosted on Render, due to the nature of Render's free tier hosting:
 
+[https://library-mgmt-backend-latest.onrender.com/swagger-ui](https://library-mgmt-backend-latest.onrender.com/swagger-ui)
+
 - The application may become inactive after periods of no usage.
 - The first request after an inactive period may take longer to load (usually 5 - 10 minutes) as the server spins up.
 - Subsequent requests will be faster once the server is active.
