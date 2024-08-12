@@ -52,7 +52,7 @@ export default function EditMemberForm({
 
   return (
     <form
-      onSubmit={handleSubmit(async (values) => {
+      onSubmit={handleSubmit(async (values: any) => {
         const res = await updateMember(
           member.id,
           JSON.parse(JSON.stringify(values))

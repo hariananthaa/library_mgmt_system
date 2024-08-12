@@ -29,7 +29,7 @@ This application implements a robust role-based authorization system to ensure s
 - **User Roles**:
 
   - Admin: Can manage books, members, and transactions.
-  - Member: Can view books and manage their own transactions.
+  - Member: Can view books and manage their own transactions and search a book by genre.
 
 - **Access Control**:
 
@@ -51,9 +51,11 @@ This application implements a robust role-based authorization system to ensure s
   - JWT stored in HTTP-only cookies to prevent client-side access.
   - Secure flag ensures the cookie is only transmitted over HTTPS.
   - SameSite attribute set to prevent CSRF attacks.
- 
+
 ## Credentials
+
 Admin Credential:
+
 - email: admin@zit.com
 - password: test@123
 - You can add members via this admin credential.
@@ -166,6 +168,7 @@ If you experience a delay when first accessing the application, please be patien
 You can access the live version of this application at: https://library-mgmt-system-beta.vercel.app
 
 Admin Credential:
+
 - email: admin@zit.com
 - password: test@123
 - You can add members via this admin credential.

@@ -47,7 +47,7 @@ export default function MemberAddForm() {
 
   return (
     <form
-      onSubmit={handleSubmit(async (values) => {
+      onSubmit={handleSubmit(async (values: any) => {
         const res = await addMember(JSON.parse(JSON.stringify(values)));
         if (!res.result) {
           toast.error(res.message);
