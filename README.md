@@ -147,6 +147,10 @@ or
 yarn start
 ```
 
+## Database Structure
+
+[https://dbdiagram.io/d/library_mgmt_system-66b9968c8b4bb5230ed5d0c0](https://dbdiagram.io/d/library_mgmt_system-66b9968c8b4bb5230ed5d0c0)
+
 ## Deployment
 
 This frontend application is hosted on Vercel, a cloud platform for static sites and Serverless Functions.
