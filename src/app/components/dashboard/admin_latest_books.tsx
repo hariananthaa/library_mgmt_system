@@ -66,7 +66,7 @@ export default async function AdminLatestBooks() {
                   </div>
                 </div>
                 <p
-                  className={`${lusitana.className} text-sm font-medium md:text-base`}
+                  className={`${lusitana.className} text-right text-sm font-medium md:text-base`}
                 >
                   {book.genre}
                 </p>

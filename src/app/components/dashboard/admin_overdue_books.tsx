@@ -9,7 +9,7 @@ import { BookTransaction } from "@/app/lib/definitions";
 import Link from "next/link";
 import { fetchAllOverdueBookTransactions } from "@/app/lib/book_transaction_actions";
 
-export default async function MemberOverdueBooks() {
+export default async function AdminOverdueBooks() {
   const latestBooksRes = await fetchAllOverdueBookTransactions(1, 5);
   if (!latestBooksRes.result) {
     return (
@@ -65,9 +65,12 @@ export default async function MemberOverdueBooks() {
                       >
                         {bt.book.title}
                       </Link>
-                      <p className="hidden text-sm text-gray-500 sm:block">
-                        {bt.book.author}
-                      </p>
+                      <Link
+                        href={`/members/${bt.member.id}/view`}
+                        className="text-sm text-blue-600 underline md:text-base line-clamp-2 overflow-x-auto"
+                      >
+                        {bt.member.name}
+                      </Link>
                     </div>
                   </div>
                   <p

@@ -9,6 +9,7 @@ import RoleBasedVisibility from "@/app/common/role_based_visbility";
 import { Role } from "@/app/lib/definitions";
 import MemberLatestBooks from "@/app/components/dashboard/member_latest_books";
 import MemberOverdueBooks from "@/app/components/dashboard/member_overdue_books";
+import AdminOverdueBooks from "@/app/components/dashboard/admin_overdue_books";
 
 export default async function Page() {
   return (
@@ -22,6 +23,11 @@ export default async function Page() {
         </Suspense>
       </RoleBasedVisibility>
       <div className="pt-6 grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-8">
+        <RoleBasedVisibility role={[Role.ADMIN]} fallback={<></>}>
+          <Suspense fallback={<LatestbooksSkeleton />}>
+            <AdminOverdueBooks />
+          </Suspense>
+        </RoleBasedVisibility>
         <RoleBasedVisibility
           role={[Role.ADMIN]}
           fallback={<MemberLatestBooks />}
